@@ -26,11 +26,6 @@ body { /*repeating background image*/
   overflow-x: hidden;
   text-align: left;
 }
-.imgflip {
-  /* flip horizontally */
-  transform: rotateY(180deg);
-  right: 500px;
-}
 .page {
   height: 650px; /*text area of box*/
   overflow: auto;

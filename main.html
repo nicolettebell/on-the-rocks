@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=".\main_css.css" rel="stylesheet" type="text/css" />
+    <link href=".\images\Negroni.png" rel="shortcut icon" type="image/x-icon"> <!--icon from Majnouna https://www.deviantart.com/majnouna/art/65-Classic-Cocktails-202765022-->
+    <title>|| On the Rocks ||</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!-- jQuery -->
+</head>
+
+<body>
+    <h3>on the rocks</h3>
+    <h4>a site by nicolette</h4>
+
+    <div id="main" style="position: absolute; border-radius: 20px;"> <!--creates box for text, border radius higher=rounder, size managed in css #main-->
+    <div class="page">
+    <a name="Home"></a>
+
+    <h1>Welcome!</h1>
+    <p>
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    </p>
+    <p>
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+    <br><br></p>
+
+    </div>
+    </div>
+
+    <div id="splash1" style="position: absolute; border-radius: 0px;">
+    <center>
+    </center>
+    </div>
+
+    <div id="box1" style="position: absolute; border-radius: 30px;">
+    <center>
+    </center>
+    </div>
+
+    <div id="box2" style="position: absolute; border-radius: 30px;">
+    <center>
+    </center>
+    </div>
+
+    <div id="box3" style="position: absolute; border-radius: 30px;">
+    <center>
+    </center>
+    </div>
+
+    <div id="invisible" style="position: absolute; border-radius: 30px;">
+    <center>
+    </center>
+    </div>
+    
+    <a id="invisible" href="main.html"></a>
+
+    <nav class='animated bounceInDown'>
+        <ol>
+            <li><a href="main.html">Home </a></li>
+            <li class='sub-menu'><a href="#">Drinks </div></a>
+                <ul>
+                    <li><a href='AllRecipes.html'>See All</a></li>
+                    <li><a href='AllRecipes.html#popup1'>Manhattan</a></li>
+                    <li><a href='AllRecipes.html#popup2'>Black Russian</a></li>
+                    <li><a href='AllRecipes.html#popup3'>Negroni</a></li>
+                    <li><a href='AllRecipes.html#popup4'>Blueberry Tea</a></li>
+                    <li><a href='AllRecipes.html#popup5'>Boozy Hot Chocolate</a></li>
+                    <li><a href='AllRecipes.html#popup6'>Caesar</a></li>
+                    <li><a href='AllRecipes.html#popup7'>Pisco Sour</a></li>
+                    <li><a href='AllRecipes.html#popup8'>Moscow Mule</a></li>
+                    <li><a href='AllRecipes.html#popup9'>Vodka Sunrise</a></li>
+                    <li><a href='AllRecipes.html#popup10'>The Hugo</a></li>
+                    <li><a href='AllRecipes.html#popup11'>Brown Cow</a></li>
+                    <li><a href='AllRecipes.html#popup12'>Mojito</a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About </a></li>
+            <li><a href="ContactUs.html">Contact Us </a></li>
+        </ol>
+    </nav>
+    
+    <script>
+        $('.sub-menu ul').hide();
+    $(".sub-menu a").click(function () {
+      $(this).parent(".sub-menu").children("ul").slideToggle("100");
+      $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+    });
+    </script>
+
+<!----
+    <div id="nav" style="position: fixed;"><div style="height: 35px;"></div><div style="padding-left: 25px;"><!--<h3>nav</h3>--> <!---NAV bar, fix text--
+    </div>
+        <p><br><br><br><br><br><br></p>
+        <a href="main.html">Home </a>
+        <a href="#pl">Drinks </a>
+        <a href="About.html">About </a>
+        <a href="ContactUs.html">Contact Us </a>
+    </div>
+<!--NAV-->       
+    <div id="bottomright" style="position: absolute; border-radius: 100px;">
+    <center>
+    </center>
+    </div>
+
+</body>  

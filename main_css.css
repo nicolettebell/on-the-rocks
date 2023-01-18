@@ -1,0 +1,601 @@
+table {
+  background-color: transparent;
+}
+table a img {
+  display: none;
+}
+font.sf {
+  display: none;
+}
+body { /*repeating background image*/
+  background-image: url("./images/mainbkgd3.png"); /*http://i.imgur.com/G0tHZ1L.png || http://static.colourlovers.com/images/patterns/5990/5990475.png*/
+  background-attachment: fixed;
+  background-position: center left;
+}
+#main { /*box*/
+  width: 500px;
+  height: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  left: 250px;
+  top: 175px;
+  border: 5px #e8e8e8 solid;
+  font: 14px Verdana;
+  color: #696969;
+  overflow: hidden;
+  overflow-x: hidden;
+  text-align: left;
+}
+.page {
+  height: 650px; /*text area of box*/
+  overflow: auto;
+}
+  
+/*/-------------------------NAVIGATION BAR 2 START         --------------/*/
+nav { /*actual nav menu bar*/
+  position: absolute;
+  border-right: 1px solid #e6e6e6;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  margin: 0px;
+  width: 235px;
+  padding: 0px 20px;
+  z-index: 0;
+  background: #F1F1F1
+}
+nav ol { /*remove bullet points from ol*/ /*MAIN NAV LIST*/
+  list-style: none;
+  color: #808080;
+  font-family: candara,optima;
+  font-weight: lighter;
+  font-size: 24px; /*size of nav items*/
+  margin: 0;
+  padding: 100;
+  text-align: right;
+  margin-top: 75px;
+  margin-bottom: 100px;
+  display: flex; /*next 3 rows for widening vertical gap btwn list items*/
+  flex-direction:column;
+  gap: 20px;
+}
+nav ul { /*remove bullet points from ul*/ /*SUB NAV LIST*/
+    list-style: none;
+    margin: 0;
+    padding: 10px 15px;
+    height:500px; /*adjust height of submenu, for overflow*/
+    margin-bottom: 6px;
+    overflow-y: auto;
+}
+nav ul li a { /*spacing of menu items*/
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    border-bottom: 1px solid #e6e6e6;
+    color: #808080;
+    font-family: candara,optima;
+    font-weight: lighter;
+    font-size: 15px; /*size of nav items*/
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+    margin-bottom: 6px;
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    overflow-y: auto;
+}
+nav ul li a:hover { /*nav selection hover colour*/
+    background: #1d4f71;
+    color: #fff;
+}
+nav ul ul { /*submenu bkgd colour*/
+    background: rgba(0, 0, 0, 0.2);
+}
+nav ul li ul li a { /*indentation of submenu*/
+    border-left: 20px solid transparent;
+    padding: 10px 20px;
+}
+
+/*/-------------------------NAVIGATION BAR 2 END          --------------/*/
+
+#splash1 { /*upper circle*/
+  width: 200px;
+  height: 200px;
+  background-image: url("./images/Negroni.png"); /*http://static.colourlovers.com/images/patterns/1101/1101098.png*/
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  border: 0px solid;
+  border-color: #e8e8e8;
+  top: 100px;
+  left: 150px;
+  line-height: 125px;
+}
+#splash2 { /*upper circle*/
+  width: 200px;
+  height: 200px;
+  background-image: url("./images/Old Fashioned.png"); /*http://static.colourlovers.com/images/patterns/1101/1101098.png*/
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  border: 0px solid;
+  border-color: #e8e8e8;
+  top: 100px;
+  left: 150px;
+  line-height: 125px;
+}
+#bottomright { /*lower circle*/
+  width: 150px;
+  height: 150px;
+  background-image: url("./images/rainbow.png"); /*http://static.colourlovers.com/images/patterns/1101/1101098.png*/
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 700px;
+  left: 1600px;
+  line-height: 125px;
+  z-index: 100px;
+}
+#box2 { /*left square*/
+  width: 250px;
+  height: 250px;
+  background-image: url("./images/garnish1.jpg"); /*http://static.colourlovers.com/images/patterns/2447/2447768.png*/
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 425px;
+  left: 860px;
+  line-height: 200px;
+  z-index: 6;
+}
+#box1 { /*middle square*/
+  width: 250px;
+  height: 250px;
+  background-image: url("./images/garnish2.jpg"); /*http://static.colourlovers.com/images/patterns/5990/5990456.png*/
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 225px;
+  left: 1050px;
+  line-height: 175px;
+  z-index: 5;
+}
+#box3 { /*right square*/
+  width: 250px;
+  height: 250px;
+  background-image: url("./images/garnish3.jpg"); /*http://static.colourlovers.com/images/patterns/3618/3618381.png*/
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 300px;
+  left: 1290px;
+  line-height: 225px;
+  z-index: 4;
+}
+/**/
+#drink1 { /*selections for AllRecipes widths	100	500	900	1300
+  heights 150	425	700*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/manhattan.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 150px;
+  left: 100px;
+  line-height: 225px;
+}
+#drink2 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/blackrussian.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 150px;
+  left: 500px;
+  line-height: 225px;
+}
+#drink3 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/negroni_real.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 150px;
+  left: 900px;
+  line-height: 225px;
+}
+#drink4 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/blueberrytea.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 150px;
+  left: 1300px;
+  line-height: 225px;
+}
+#drink5 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/hotchocolate.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 425px;
+  left: 100px;
+  line-height: 225px;
+}
+#drink6 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/caesar.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 425px;
+  left: 500px;
+  line-height: 225px;
+}
+#drink7 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/piscosour.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 425px;
+  left: 900px;
+  line-height: 225px;
+}
+#drink8 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/moscowmule.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 425px;
+  left: 1300px;
+  line-height: 225px;
+}
+#drink9 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/vodkasunrise.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 700px;
+  left: 100px;
+  line-height: 225px;
+}
+#drink10 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/hugo.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 700px;
+  left: 500px;
+  line-height: 225px;
+}
+#drink11 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/whiterussian.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 700px;
+  left: 900px;
+  line-height: 225px;
+}
+#drink12 { /*selections for AllRecipes*/
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index: 1;
+  background-image: url("./images/mojito.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border: 3px solid;
+  border-color: #e8e8e8;
+  top: 700px;
+  left: 1300px;
+  line-height: 225px;
+}
+/**/
+#invisible {
+  width:750px;
+  height:80px;
+  position: fixed;
+  z-index: 5;
+  background-image: url("./images/transparent.png");
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  top: 30px;
+  left: 575px;
+  line-height: 225px;
+}
+
+/**//*--------------OVERLAY AND POPUP--------------*/
+.overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  z-index: 100;
+}
+
+.popup {
+  margin: 30px auto;
+  padding: 20px;
+  background: rgb(247, 247, 247);
+  border-radius: 8px; /*slightly rounded corners*/
+  position: relative;
+  transition: all 5s ease-in-out;
+  z-index: 1000;
+  max-height: 900px;
+  max-width: 900px;
+  overflow-y: auto;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  right: 30px;
+  transition: all 50ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #d806a4;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+/**/
+/*
+textarea {
+  width: 150px;
+  height: 75px;
+  background-color: #DCDCDC;
+  color: #ffffff;
+  font-family: arial;
+  overflow: hidden;
+  margin: 2px;
+}
+textarea.button {
+  width: 88px;
+  height: 31px;
+  background-color: #DCDCDC;
+  color: #ffffff;
+  font-family: arial;
+  overflow: hidden;
+  margin: 2px;
+}
+*/
+
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  font: 60px Brush Script MT;
+  color: #c03b73;
+  background: url("./images/header1bkgd.png");
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 84px;
+  line-height: 84px;
+  padding-left: 80px;
+}
+h2 {
+  font: 25px Arial;
+  color: #008085;
+  font-style: -blocked-;
+  background: url("./images/header2bkgd.png");
+  background-repeat: no-repeat;
+  background-position: 65px;
+  width: 225px;
+  height: 55px;
+  line-height: 55px;
+  padding-left: 120px;
+}
+
+h3 {
+  font: 100px georgia;
+  color: rgb(207, 207, 207); /*#EEE*/
+  font-weight: normal;
+  text-align: center;
+  margin-left: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: transparent;
+  border: 0px solid #e5e5e5;
+  margin-bottom: -65px;
+  margin-top: 0px;
+  position: fixed;
+  left: 575px;
+
+}
+h4 {
+  font: 12px georgia;
+  color: rgb(54, 54, 54); /*#CCC*/
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  margin-left: 750px;
+  text-transform: lowercase;
+  letter-spacing: 0px;
+  background: transparent;
+  border: 0px solid #e5e5e5;
+  margin-top: 12px;
+  position: fixed;
+  left: 520px;
+  top: 60px;
+}
+h5 {
+  font-family: georgia;
+  font-size: 70px;
+  text-align: center;
+  letter-spacing: 6px;
+  margin: 100px -40px 70px -40px;
+  line-height: 5px;
+  background: #ddd;
+  color: #DCC07F
+}
+
+a:link {
+  font: tahoma;
+  text-decoration: none;
+  color: #27b3cc;
+}
+a:visited { /*ALSO AFFECTS LIST COLOUR*/
+  font: tahoma;
+  text-decoration: none;
+  color: #bb0081;
+}
+a:hover {
+  font: tahoma;
+  text-decoration: none;
+  color: #85005b;
+}
+b {
+  font: tahoma;
+  color: #77005f;
+  font-weight: bold;
+}
+i {
+  color: #dd7f1a;
+  font: 12pt vivaldi;
+  font-style: italic;
+}
+img.buttons {
+  margin: 3px;
+}
+a.nav:link, a.nav:visited, a.nav:active {
+  background: #696969;
+  font: 15px Arial;
+  line-height: 50px;
+  display: inline-block;
+  text-align: center;
+  text-transform: none;
+  width: 100%;
+  margin: 0px 0px 0px;
+  overflow: hidden;
+  font-weight: bold;
+  height: 50px;
+  color: #ffffff;
+  border-top: 0px solid -blocked-;
+  border-bottom: 0px solid -blocked-;
+}
+
+::-webkit-scrollbar { /*custom scrollbar, code based on w3school code*/
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(187, 187, 187);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(151, 151, 151);
+}
+

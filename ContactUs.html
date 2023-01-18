@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=".\main_css.css" rel="stylesheet" type="text/css" />
+    <link href=".\images\Negroni.png" rel="shortcut icon" type="image/x-icon"> <!--icon from Majnouna https://www.deviantart.com/majnouna/art/65-Classic-Cocktails-202765022-->
+    <title>|| On the Rocks ||</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!-- jQuery -->
+</head>
+
+<style>
+</style>
+
+<body>
+    <h3>on the rocks</h3>
+    <h4>reach out</h4>
+        
+    <a id="invisible" href="main.html"></a>
+    
+    <center>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+    </center>
+    <!--NAV-->     
+    <nav class='animated bounceInDown'>
+        <ol>
+            <li><a href="main.html">Home </a></li>
+            <li class='sub-menu'><a href="#">Drinks </div></a>
+                <ul>
+                    <li><a href='AllRecipes.html'>See All</a></li>
+                    <li><a href='AllRecipes.html#popup1'>Manhattan</a></li>
+                    <li><a href='AllRecipes.html#popup2'>Black Russian</a></li>
+                    <li><a href='AllRecipes.html#popup3'>Negroni</a></li>
+                    <li><a href='AllRecipes.html#popup4'>Blueberry Tea</a></li>
+                    <li><a href='AllRecipes.html#popup5'>Boozy Hot Chocolate</a></li>
+                    <li><a href='AllRecipes.html#popup6'>Caesar</a></li>
+                    <li><a href='AllRecipes.html#popup7'>Pisco Sour</a></li>
+                    <li><a href='AllRecipes.html#popup8'>Moscow Mule</a></li>
+                    <li><a href='AllRecipes.html#popup9'>Vodka Sunrise</a></li>
+                    <li><a href='AllRecipes.html#popup10'>The Hugo</a></li>
+                    <li><a href='AllRecipes.html#popup11'>Brown Cow</a></li>
+                    <li><a href='AllRecipes.html#popup12'>Mojito</a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About </a></li>
+            <li><a href="ContactUs.html">Contact Us </a></li>
+        </ol>
+    </nav>
+
+<script>
+    $('.sub-menu ul').hide();
+$(".sub-menu a").click(function () {
+  $(this).parent(".sub-menu").children("ul").slideToggle("100");
+  $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+});
+</script>
+<!--NAV--> 
+<div id="bottomright" style="position: absolute; border-radius: 100px;">
+    <center>
+    </center>
+    </div>
+
+</body>  
+</html>

@@ -1,7 +1,6 @@
 # about
 Check out the site <a href="https://nicolettebell.github.io/on-the-rocks/index.html">here</a><br>
-This is my final project for the Code First Girls Introduction to Web Development course.
-I only accidentally stayed up until 3am once while working on it 🙃<br>
+This is my final project for the Code First Girls Introduction to Web Development course.<br>
 I built this site using HTML, CSS and JavaScript. I based the theme of the site around my love of mixology. The site has a relatively minimal design and features an age gate landing page, home page, about page, recipe list, and a contact form.
 
 # project requirements
